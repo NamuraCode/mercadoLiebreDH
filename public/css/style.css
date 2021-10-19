@@ -10,22 +10,22 @@ header {
 }
 
 img {
-    max-width: 65vw;
+    max-width: 76vw;
 }
 
 header p {
-    width: 65vw;
-    margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
 header .search-bar {
-    width: 60vw;
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    
 }
 
 header img {
-    display: flex;
-    justify-content: center;
+    display: block;
     padding: 10px;
     margin: auto;
     margin-bottom: 10px;
@@ -50,7 +50,6 @@ header .burger-menu button i {
 }
 
 .nav ul {
-
     width: 60vw;
     margin: auto;
     list-style: none;
@@ -88,14 +87,12 @@ main section ul {
 }
 
 main section ul article {
-    display:flex;
     background-color: white;
     display: block;
     padding: 15px;
     margin: 10px;
     border-top: solid #ebebeb 1px;
 }
-
 
 .titulos {
     display:flex;
@@ -125,9 +122,17 @@ main section ul article {
 
 .fa-truck {
     color: #39b54a;
-    padding: 4px;
-    border: solid #39b54a 2px;
     border-radius: 20px;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    right: 20px;
+    top: -15px;
 }
 
 /*FOOTER---------------------------------------------------------*/
@@ -140,6 +145,7 @@ footer {
 
 footer ul {
     display: flex;
+    margin-top: 0;
     flex-direction: column;
     align-items: center;
     margin-bottom: 10px;
@@ -161,4 +167,58 @@ footer ul p {
 
 footer p {
     margin-top: 0;
+}
+
+@media (min-width: 361px) {
+    header .containheader{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px;
+        margin-top: 10px;
+        padding: 5px;
+
+
+    }
+    header .containheader img{
+        max-width:250px;
+        margin: 0;
+        padding: 0;
+    }
+
+    img {
+        max-width: 78vw;
+    }
+
+    .nav ul {
+        width: 60vw;
+        margin: auto;
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav ul li {
+        padding: 10px;
+    
+    }
+
+}
+
+@media (min-width: 769px) {
+    img {
+        max-width: 84vw;
+    }
+    main section ul article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+    }
+    
 }
