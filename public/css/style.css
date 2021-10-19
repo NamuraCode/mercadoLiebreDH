@@ -71,6 +71,7 @@ header .burger-menu button i {
 
 body{
     margin: 0;
+
 }
 main {
     background-color: #ebebeb;
@@ -173,6 +174,9 @@ footer p {
 }
 
 @media (min-width: 361px) {
+    main{
+
+    }
     header .containheader{
         display: flex;
         justify-content: space-around;
@@ -221,7 +225,7 @@ footer p {
     }
     main section ul article {
         width: 16vw;
-        height: 42vw;
+        height: 30vw;
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
 
     }
@@ -230,10 +234,26 @@ footer p {
         flex-direction: row;
         justify-content: flex-end;
     }
+    
     main section ul article p{
         display: flex;
         justify-content: center;
 
     }
     
+    .titulos {
+        display:block;
+        width: 100%;
+        flex-direction: center;
+        justify-content: center;
+        padding-left: 10px;
+        margin: auto;
+        color: #666;
+        font-size: 24px;
+    }
+    
+    main section ul {
+        margin: 0px;
+
+    }
 }
