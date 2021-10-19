@@ -107,17 +107,20 @@ main section ul article {
 .cost {
     display: block;
     font-size: 18px;
+    width: 20%;
 }
 
 .rebates {
     color: #39b54a;
     display: block;
     font-size: 16px;
+    width: 20%;
 }
 
 .description {
     display: block;
     font-size: 16px;
+    width: 20%;
 }
 
 .fa-truck {
@@ -214,10 +217,22 @@ footer p {
 
 @media (min-width: 769px) {
     img {
-        max-width: 84vw;
+        max-width: 16vw;
     }
     main section ul article {
+        width: 16vw;
+        height: 42vw;
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+    }
+    main section ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    main section ul article p{
+        display: flex;
+        justify-content: center;
 
     }
     
