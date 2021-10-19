@@ -1,0 +1,158 @@
+/*font-family: 'Roboto', sans-serif;*/
+
+/*HEADER---------------------------------------------------------*/
+
+header {
+    width: 100vw;
+    background-color: #EAC926;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+img {
+    max-width: 65vw;
+}
+
+header p {
+    width: 65vw;
+    margin: auto;
+}
+
+header .search-bar {
+    width: 60vw;
+    margin: auto;
+}
+
+header img {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 50%;
+
+}
+
+header .burger-menu {
+    display: flex;
+    justify-content: center;
+}
+
+header .burger-menu button {
+    border-radius: 3px;
+    margin-bottom: 10px;
+    background-color: #1259c3;
+}
+
+header .burger-menu button i {
+    margin: auto;
+    color: white;
+}
+
+.nav ul {
+
+    width: 60vw;
+    margin: auto;
+    list-style: none;
+    padding: 0;
+}
+
+.nav ul li {
+    text-align: center;
+}
+
+.nav ul li a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: #000000;
+    text-decoration: none;
+}
+
+/*MAIN---------------------------------------------------------*/
+
+main {
+    background-color: #ebebeb;
+    width: 90vw;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+main section ul {
+    padding: 0;
+    display: block;
+    width: 90vw;
+    margin: auto;
+}
+
+main section ul article {
+    display:flex;
+    background-color: white;
+    display: block;
+    padding: 15px;
+    margin: 10px;
+    border-top: solid #ebebeb 1px;
+}
+
+
+.titulos {
+    width: 70vw;
+    margin: auto;
+    display: block;
+    font-size: 24px;
+}
+
+.cost {
+    display: block;
+    font-size: 18px;
+}
+
+.rebates {
+    color: #39b54a;
+    display: block;
+    font-size: 16px;
+}
+
+.description {
+    display: block;
+    font-size: 16px;
+}
+
+.fa-truck {
+    color: #39b54a;
+    padding: 4px;
+    border: solid #39b54a 2px;
+    border-radius: 20px;
+}
+
+/*FOOTER---------------------------------------------------------*/
+
+footer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin: 10px;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-left: 0;
+}
+
+footer ul .footer-icon {
+    width: 2em;
+    height: 2em;
+    margin: 10px;
+    color: #1259c3;
+}
+
+footer ul p {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin-top: 0;
+}
