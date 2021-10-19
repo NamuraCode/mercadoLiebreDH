@@ -29,7 +29,7 @@ header img {
     padding: 10px;
     margin: auto;
     margin-bottom: 10px;
-    width: 50%;
+    
 
 }
 
@@ -71,11 +71,11 @@ header .burger-menu button i {
 /*MAIN---------------------------------------------------------*/
 
 body{
-    width: 100vw;
+    margin: 0;
 }
 main {
     background-color: #ebebeb;
-    width: 90vw;
+    width: 100vw;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
 }
@@ -98,9 +98,12 @@ main section ul article {
 
 
 .titulos {
-    width: 70vw;
+    display:flex;
+    width: 90vw;
+    justify-content: flex-start;
+    padding-left: 10px;
     margin: auto;
-    display: block;
+    color: #666;
     font-size: 24px;
 }
 
