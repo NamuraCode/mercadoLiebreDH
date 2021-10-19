@@ -70,6 +70,9 @@ header .burger-menu button i {
 
 /*MAIN---------------------------------------------------------*/
 
+body{
+    width: 100vw;
+}
 main {
     background-color: #ebebeb;
     width: 90vw;
