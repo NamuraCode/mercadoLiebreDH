@@ -9,44 +9,117 @@ header {
     font-size: 12px;
 }
 
+header .ib {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.fa-hand-holding-usd:before {
+    margin-right: 5px;
+}
+
+.fa-sign-in-alt:before {
+    margin-left: 2px;
+}
+
+.fa-shopping-basket:before {
+    margin-left: 2px;
+}
+
+.fa-id-card:before {
+    margin-left: 2px;
+}
+
 img {
     max-width: 76vw;
+    margin: auto;
+}
+
+.nav {
+    display: none;
+}
+
+header .containheader{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top:20px;
+    padding-right: 10px;
+    padding-left: 18px;
+}
+
+.fa-bars:before {
+    content: "\f0c9";
+    font-size: 20px;
+    text-align: center;
 }
 
 header p {
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 10px;
 }
 
-header .search-bar {
+header .containheader .search-bar {
     display: flex;
     justify-content: center;
-    
-}
-
-header img {
-    display: block;
-    padding: 10px;
     margin: auto;
-    margin-bottom: 10px;
-    
+    width: 48%;
+    border: 4px;
+}
 
+header .containheader .search-bar button {
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 0px 4px 4px 0px;
+    color: #666;
+}
+
+header .containheader .search-bar input {
+    width: 60%;
+    height: 39px;
+    border-style: none;
+    padding-inline-start: 10px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    border: 0px solid #A4A4A4;
+    border-radius: 4px 0px 0px 4px;
+}
+
+header .containheader img {
+    display: block;
+    margin: 0px;
+    width: 48%;
+    margin-bottom: 10px;
+    padding-left: 5px;
 }
 
 header .burger-menu {
     display: flex;
     justify-content: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 header .burger-menu button {
-    border-radius: 3px;
+    border-radius: 15%;
     margin-bottom: 10px;
     background-color: #1259c3;
+    font-size: 2em;
+}
+
+.burger-menu button:hover .nav {
+    display: block;
 }
 
 header .burger-menu button i {
     margin: auto;
     color: white;
+    
 }
 
 .nav ul {
@@ -69,10 +142,11 @@ header .burger-menu button i {
 
 /*MAIN---------------------------------------------------------*/
 
-body{
+body {
     margin: 0;
 
 }
+
 main {
     display: inline-block;
     background-color: #ebebeb;
@@ -97,16 +171,17 @@ main section ul article {
     background-color: white;
     position: relative;
     display: block;
-    padding: 1%;
-    margin: 10px;
+    padding: 15px;
     border-top: solid #ebebeb 1px;
+    cursor: pointer;
+    border-radius: 4px 4px 4px 4px;
 }
 
 .titulos {
-    display:flex;
+    display: flex;
     width: 90vw;
     justify-content: flex-start;
-    padding-left: 10px;
+    padding-left: 5%;
     margin: auto;
     color: #666;
     font-size: 24px;
@@ -115,23 +190,29 @@ main section ul article {
 .cost {
     display: block;
     font-size: 18px;
-    width: 24%;
     padding: 5px;
-    margin-right: 10px;
+    margin: 0px;
+    margin-top: 10px;
 }
 
 .rebates {
     display: block;
     color: #39b54a;
     font-size: 16px;
-    width: 34%;
+    width: 70%;
     padding-top: 8px;
     padding-left: 6px;
+    margin: 0px;
 }
 
 .description {
     font-size: 16px;
     width: 70%;
+}
+
+.fa-truck:before {
+    content: "\f0d1";
+    padding: 2%;
 }
 
 .fa-truck {
@@ -141,22 +222,12 @@ main section ul article {
     border: 1px solid #39b54a;
     background-color: #FFF;
     border-radius: 50%;
-    position: absolute;
-    top: 247px;
-    right: 16px;
-}
-
-
-.fa-truck {
-    font-size: 19px;
-    font-style:none;
+    
 }
 
 .renglon {
-    display:normal;
-    display:flex;
-    justify-content: left;
-    flex-direction: flex-end;
+    border-top: 1px solid rgb(184, 184, 184);
+    border-radius: 4px 4px 4px 4px;
 }
 
 /*FOOTER---------------------------------------------------------*/
@@ -165,11 +236,10 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-    margin: 15%;
-    margin-bottom: 0;
-    margin-top: 20px;
+    font-size: 16px;
+    background-color: white;
 }
 
 footer ul {
@@ -183,6 +253,7 @@ footer ul .footer-icon {
     font-size: 2em;
     margin: 10px;
     color: #1259c3;
+    text-align: center;
 }
 
 footer ul p {
@@ -191,35 +262,79 @@ footer ul p {
     margin-bottom: 10px;
 }
 
+footer ul .copy {
+    text-align: left;
+}
+
 footer p {
     margin-top: 10px;
     text-align: left;
+    width: 100%;
 }
+
+footer ul .foo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 15%;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
 
 @media (min-width: 361px) {
 
     /*HEADER---------------------------------------------------------*/
 
-    header .containheader{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 25px;
-
-
+    header p {
+        width: 33%;
+        text-align: left;
     }
-    header .containheader img{
-        max-width:250px;
+
+    header .containheader img {
+        width: 30%;
+    }
+
+    header .containheader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:0px;
+        padding: 25px 25px 25px 25px;
+    }
+
+    header .ib {
+        display: flex;
+        justify-content: center;
+        padding: 0px;
+    }
+
+    header .containheader .ib img {
+        padding-right: 0px;
+    }
+
+    header .containheader .ib .search-bar {
+        display: flex;
+        justify-content: left;
+        width: 50%;
+        margin: auto;
+        padding-left: 0px;
+        border: 4px;
+        height: 50%;
+    }
+
+    img {
+        max-width: 45vw;
+    }
+
+    header .containheader img {
         margin: 0;
         padding: 0;
     }
 
-    img {
-        max-width: 78vw;
-    }
-
     .nav ul {
-        width: 60vw;
+        width: 100%;
         margin: auto;
         list-style: none;
         padding: 0;
@@ -227,7 +342,7 @@ footer p {
         flex-direction: row;
         justify-content: center;
     }
-    
+
     .nav {
         display: flex;
         flex-direction: row;
@@ -235,12 +350,81 @@ footer p {
 
     .nav ul li {
         padding: 10px;
-    
+        text-align: center;
+    }
+
+    header .burger-menu {
+        display: none;
+    }
+
+    header .search-bar {
+        max-width: 30%;
+    }
+
+    header .search-bar input {
+        width: 78%;
     }
 
     /*MAIN---------------------------------------------------------*/
 
+    main section ul article {
+        margin: auto;
+        margin-bottom: 10px;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    img {
+        max-width: 38vw;
+    }
+
+    main section ul article img {
+        width: 100%;
+    }
+
+    main section ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .rebates {
+        width: 70%;
+        padding-left: 0px;
+        padding-top: 6px;
+        margin: 0px 10px 0px 0px;
+    }
+
+    .cost {
+        width:70%;
+        margin:0px;
+        margin:0px 0px 0px 0px;
+    }
+
+    .titulos {
+        padding-left: 9%;
+    }
+
+    .renglon {
+        margin-top: 10px;
+        display: flex;
+        justify-content: left;
+        border-top: 1px solid rgb(184, 184, 184);
+        border-radius: 4px 4px 4px 4px;
+    }
+
     /*FOOTER-------------------------------------------------------*/
+
+    footer {
+        margin: 6%;
+        margin-bottom: 0;
+        margin-top: 20px;
+    }
+
+    footer ul .foo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }   
 
 }
 
@@ -249,52 +433,108 @@ footer p {
 
     /*HEADER---------------------------------------------------------*/
 
-    header .burger-menu{
-        display:none;
+    header .burger-menu {
+        display: none;
+    }
+
+    header p {
+        width: 18%;
+        text-align: center;
+    }
+
+    header .containheader {
+        padding-left: 0px;
+        padding: 25px 25px 25px 25px;
+    }
+
+    header .nav .izquierda {
+        text-align: left;
+    }
+
+
+    header .containheader .search-bar input {
+        width: 80%;
+        border-radius: 4px; 
+        border-style: none; 
+        padding-inline-start: 10px;
+        margin: 0px; 
+        border-radius: 4px 0px 0px 4px;
+    }
+
+    header .containheader .search-bar button{
+        margin-bottom: 0px;
+    }
+
+    header .containheader .search-bar {
+        margin: 0px;
+        max-width: 30%;
+        padding-left: 0px;
+        padding-right: 0px;
+        height: 90%;
+    }
+
+    /*MAIN---------------------------------------------------------*/
+
+    article .description {
+        display: none;
+    }
+
+    article:hover .description {
+        display: flex;
+    }
+
+    main section ul article {
+        box-shadow: none;
+    }
+
+
+    article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .fa-truck {
+        top: 250px;
+    }
+
+    .cost {
+        width: 45%;
+    }
+
+    main section ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main section ul article {
+        margin:10px;
+        width: 16vw;
+        height: 24vw;
+    }
+
+    main section ul article p {
+        display: flex;
+        justify-content: center;
     }
 
     img {
         max-width: 16vw;
     }
 
-    /*MAIN---------------------------------------------------------*/
-    
-    article .description{
-        display:none;
-    }
-    
-    article:hover .description{
-        display:flex;
-    }
-
-    article:hover {
-        box-shadow: 0px 0px 10px rgb(100 100 100);
-    }
-
-    .fa-truck{
-        top: 250px;
-    }
-
-    .cost{
-        width: 25%;
-    }
-
-    main section ul{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-
-    main section ul article {
-        width: 16vw;
-        height: 24vw;
-    }
-
-    main section ul article p{
-        display: flex;
-        justify-content: center;
+    .titulos {
+        padding-left: 13%;
     }
 
     /*FOOTER-------------------------------------------------------*/
 
+    footer ul {
+        justify-content: row;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    footer ul .foo {
+        margin: 1%;
+    }
 }
