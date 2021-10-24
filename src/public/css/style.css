@@ -32,7 +32,7 @@ header .ib {
 }
 
 img {
-    max-width: 76vw;
+    max-width: 82vw;
     margin: auto;
 }
 
@@ -169,7 +169,6 @@ main section ul {
 
 main section ul article {
     background-color: white;
-    position: relative;
     display: block;
     padding: 15px;
     border-top: solid #ebebeb 1px;
