@@ -303,6 +303,28 @@ footer ul .foo {
     margin-top: 20px;
 }
 
+/*MAIN-LOGIN----------------------------------------------------*/
+main {
+    width: 100vw;
+}
+main form {
+    background-color: #666;
+    margin: auto;
+    width: 70vw;
+    padding: 20px 20px 20px 20px;
+    text-align: left;
+}
+
+main form input {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+main form label {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 @media (min-width: 361px) {
 
