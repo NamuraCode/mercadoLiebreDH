@@ -40,11 +40,11 @@ img {
     display: none;
 }
 
-header .containheader{
+header .containheader {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top:20px;
+    padding-top: 20px;
     padding-right: 10px;
     padding-left: 18px;
 }
@@ -119,7 +119,7 @@ header .burger-menu button {
 header .burger-menu button i {
     margin: auto;
     color: white;
-    
+
 }
 
 .nav ul {
@@ -131,6 +131,7 @@ header .burger-menu button i {
 
 .nav ul li {
     text-align: center;
+
 }
 
 .nav ul li a {
@@ -155,9 +156,13 @@ main {
     font-size: 12px;
 }
 
+main .banner {
+    display: flex;
+    justify-content: center;
+}
 
 main .banner img {
-    max-width: 100vw;
+    max-width: 100%;
 }
 
 main section ul {
@@ -174,11 +179,12 @@ main section ul article {
     border-top: solid #ebebeb 1px;
     cursor: pointer;
     border-radius: 4px 4px 4px 4px;
+    margin-bottom: 10px;
 }
 
 .titulos {
     display: flex;
-    width: 90vw;
+    width: 95vw;
     justify-content: flex-start;
     padding-left: 5%;
     margin: auto;
@@ -192,6 +198,7 @@ main section ul article {
     padding: 5px;
     margin: 0px;
     margin-top: 10px;
+    width: 100%;
 }
 
 .rebates {
@@ -202,11 +209,15 @@ main section ul article {
     padding-top: 8px;
     padding-left: 6px;
     margin: 0px;
+    margin-top: 9px;
 }
 
 .description {
     font-size: 16px;
     width: 70%;
+    margin: auto;
+    margin-left: 0px;
+    margin-top: 25px;
 }
 
 .fa-truck:before {
@@ -216,17 +227,29 @@ main section ul article {
 
 .fa-truck {
     color: #39b54a;
-    font-size: 20px;
+    font-size: 22px;
     padding: 9px;
     border: 1px solid #39b54a;
     background-color: #FFF;
     border-radius: 50%;
-    
+    left: 83%;
+    top: -35%;
+    position: absolute;
+    transform: rotateZ(0deg);
+    transition-property: rotateZ(0deg);
+    transition-duration: 0.5s;
+}
+
+.fa-truck:hover {
+    transform: rotateZ(-90deg)
 }
 
 .renglon {
     border-top: 1px solid rgb(184, 184, 184);
     border-radius: 4px 4px 4px 4px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
 }
 
 /*FOOTER---------------------------------------------------------*/
@@ -281,14 +304,100 @@ footer ul .foo {
     margin-top: 20px;
 }
 
+/*MAIN-LOGIN----------------------------------------------------*/
+
+main {
+    width: 100vw;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+main p {
+    font-size: 18px;
+}
+
+main form {
+    margin: auto;
+    width: 80vw;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+main form input {
+    margin: 10px 0px 10px 0px;
+    padding: 0px 0px 0px 10px;
+    width: 97%;
+    height: 30px;
+    border: 0px;
+    border-radius: 7px;
+}
+
+main form .ra {
+    margin: 0px;
+    width: 18px;
+    height: 18px;
+}
+
+main form .che {
+    margin: 0px;
+    width: 18px;
+    height: 18px;
+}
+
+main form .form-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:left
+}
+
+main form .form-buttons .form-button {
+    margin: 10px;
+}
+
+main form .form-buttons .form-button button {
+    width: 270px;
+    height: 43px;
+    border: 0px;
+    border-radius: 10px;
+    font-family: 'Roboto';
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #1259c3;
+    color: white;
+}
+
+/*MAIN-LOGIN-----------------------------------------------------------------------*/
+
+main .login form button {
+    width: 100%;
+    height: 30px;
+    border: 0px;
+    border-radius: 6px;
+    font-family: 'Roboto';
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #1259c3;
+    color: white;
+    margin-top: 10px;
+}
+
+main .login form button:hover {
+    background-color: #0022AA;
+}
+
+main .login {
+    margin: auto;
+}
+
 
 @media (min-width: 361px) {
 
     /*HEADER---------------------------------------------------------*/
 
     header p {
-        width: 33%;
-        text-align: left;
+        width: 36%;
+        text-align: right;
     }
 
     header .containheader img {
@@ -297,10 +406,10 @@ footer ul .foo {
 
     header .containheader {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        padding:0px;
-        padding: 25px 25px 25px 25px;
+        width: 86%;
+        margin: auto;
     }
 
     header .ib {
@@ -324,7 +433,15 @@ footer ul .foo {
     }
 
     img {
-        max-width: 45vw;
+        max-width: 38vw;
+    }
+
+    header .containheader .search-bar input {
+        margin-bottom: 0px;
+    }
+
+    header .containheader .search-bar button {
+        margin-bottom: 0px;
     }
 
     header .containheader img {
@@ -368,12 +485,8 @@ footer ul .foo {
 
     main section ul article {
         margin: auto;
-        margin-bottom: 10px;
+        margin-bottom: 24px;
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-
-    img {
-        max-width: 38vw;
     }
 
     main section ul article img {
@@ -386,20 +499,25 @@ footer ul .foo {
     }
 
     .rebates {
-        width: 70%;
+        width: 30%;
         padding-left: 0px;
         padding-top: 6px;
-        margin: 0px 10px 0px 0px;
+        margin: 10px 0px 0px 0px;
+    }
+
+    .fa-truck {
+        top: -44%;
     }
 
     .cost {
-        width:70%;
-        margin:0px;
-        margin:0px 0px 0px 0px;
+        width: 27%;
+        margin: 10px 0px 0px 0px;
+        padding-left: 0px;
     }
 
     .titulos {
-        padding-left: 9%;
+        padding-left: 3%;
+        width: 90vw;
     }
 
     .renglon {
@@ -423,8 +541,30 @@ footer ul .foo {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-    }   
+    }
 
+    /*MAIN--FORM---------------------------------------------------------*/
+
+    main form {
+        margin: 0 auto;
+        width: 50vw;
+    }
+
+    main form .form-buttons {
+        justify-content: center;
+    }
+
+    main form .form-buttons .form-button button {
+        width: 378px;
+        height: 43px;
+        border: 0px;
+        border-radius: 5px;
+        font-family: 'Roboto';
+        font-size: 16px;
+        cursor: pointer;
+        background-color: #1259c3;
+        color: white;
+    }
 }
 
 
@@ -437,12 +577,11 @@ footer ul .foo {
     }
 
     header p {
-        width: 18%;
-        text-align: center;
+        width: 23%;
+        text-align: right;
     }
 
     header .containheader {
-        padding-left: 0px;
         padding: 25px 25px 25px 25px;
     }
 
@@ -453,14 +592,14 @@ footer ul .foo {
 
     header .containheader .search-bar input {
         width: 80%;
-        border-radius: 4px; 
-        border-style: none; 
+        border-radius: 4px;
+        border-style: none;
         padding-inline-start: 10px;
-        margin: 0px; 
+        margin: 0px;
         border-radius: 4px 0px 0px 4px;
     }
 
-    header .containheader .search-bar button{
+    header .containheader .search-bar button {
         margin-bottom: 0px;
     }
 
@@ -492,11 +631,11 @@ footer ul .foo {
     }
 
     .fa-truck {
-        top: 250px;
+        top: -50%
     }
 
     .cost {
-        width: 45%;
+        width: 30%;
     }
 
     main section ul {
@@ -507,14 +646,15 @@ footer ul .foo {
     }
 
     main section ul article {
-        margin:10px;
+        margin: 10px;
         width: 16vw;
         height: 24vw;
+        margin-bottom: 10px;
     }
 
     main section ul article p {
         display: flex;
-        justify-content: center;
+        justify-content: left;
     }
 
     img {
@@ -522,7 +662,10 @@ footer ul .foo {
     }
 
     .titulos {
-        padding-left: 13%;
+        padding-left: 0px;
+        justify-content: center;
+        width: 100%;
+        padding: 0px;
     }
 
     /*FOOTER-------------------------------------------------------*/
@@ -535,5 +678,29 @@ footer ul .foo {
 
     footer ul .foo {
         margin: 1%;
+    }
+
+    footer .foo .footer-icon:hover {
+        color:  #39b54a;
+        cursor: pointer;
+    }
+
+    /*MAIN-FORM-------------------------------------------------------*/
+
+    main form {
+        width: 30vw;
+    }
+
+    main .login form {
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+
+    main form .form-buttons .form-button button {
+        width: 476px;
+    }
+
+    main form .form-buttons .form-button button:hover {
+        background-color:#0022AA;
     }
 }
