@@ -232,17 +232,18 @@ main section ul article {
     border: 1px solid #39b54a;
     background-color: #FFF;
     border-radius: 50%;
-    left: 83%;
-    top: -35%;
     position: absolute;
-    transform: rotateZ(0deg);
+    right: 9%;
+    top: 67%;
+    /* 
+   transform: rotateX(90edg);
     transition-property: rotateZ(0deg);
-    transition-duration: 0.5s;
+    transition-duration: 0.5s;*/
 }
 
-.fa-truck:hover {
+/*.fa-truck:hover {
     transform: rotateZ(-90deg)
-}
+}*/
 
 .renglon {
     border-top: 1px solid rgb(184, 184, 184);
