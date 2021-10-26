@@ -176,10 +176,12 @@ main section ul article {
     background-color: white;
     display: block;
     padding: 15px;
+    width: 91%;
     border-top: solid #ebebeb 1px;
     cursor: pointer;
     border-radius: 4px 4px 4px 4px;
     margin-bottom: 10px;
+    position: relative;
 }
 
 .titulos {
@@ -232,16 +234,15 @@ main section ul article {
     border: 1px solid #39b54a;
     background-color: #FFF;
     border-radius: 50%;
-    left: 83%;
-    top: -35%;
-    position: absolute;
-    transform: rotateZ(0deg);
-    transition-property: rotateZ(0deg);
-    transition-duration: 0.5s;
+    position:absolute;
+    left:80%;
+    top:64%;
+    z-index:10;
 }
 
 .fa-truck:hover {
-    transform: rotateZ(-90deg)
+    transform: rotatez(260deg);
+    transition: all 0.5s
 }
 
 .renglon {
@@ -487,6 +488,7 @@ main .login {
         margin: auto;
         margin-bottom: 24px;
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width:41%;
     }
 
     main section ul article img {
@@ -506,7 +508,7 @@ main .login {
     }
 
     .fa-truck {
-        top: -44%;
+        top:69%;
     }
 
     .cost {
@@ -631,7 +633,7 @@ main .login {
     }
 
     .fa-truck {
-        top: -50%
+        top: 63%;
     }
 
     .cost {
