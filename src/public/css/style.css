@@ -1,6 +1,8 @@
 /*font-family: 'Roboto', sans-serif;*/
 
+
 /*HEADER---------------------------------------------------------*/
+
 
 header {
     width: 100vw;
@@ -141,7 +143,9 @@ header .burger-menu button i {
     text-decoration: none;
 }
 
+
 /*MAIN---------------------------------------------------------*/
+
 
 body {
     margin: 0;
@@ -253,7 +257,9 @@ main section ul article {
     position: relative;
 }
 
+
 /*FOOTER---------------------------------------------------------*/
+
 
 footer {
     display: flex;
@@ -305,7 +311,9 @@ footer ul .foo {
     margin-top: 20px;
 }
 
+
 /*MAIN-LOGIN----------------------------------------------------*/
+
 
 main {
     width: 100vw;
@@ -390,6 +398,7 @@ main .login form button:hover {
 main .login {
     margin: auto;
 }
+
 
 
 @media (min-width: 361px) {
