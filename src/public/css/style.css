@@ -238,10 +238,10 @@ main section ul article {
     border: 1px solid #39b54a;
     background-color: #FFF;
     border-radius: 50%;
-    position:absolute;
-    left:80%;
-    top:64%;
-    z-index:8;
+    position: absolute;
+    left: 80%;
+    top: 64%;
+    z-index: 8;
 }
 
 .fa-truck:hover {
@@ -357,7 +357,7 @@ main form .che {
 main form .form-buttons {
     display: flex;
     flex-wrap: wrap;
-    justify-content:left
+    justify-content: left
 }
 
 main form .form-buttons .form-button {
@@ -497,7 +497,7 @@ main .login {
         margin: auto;
         margin-bottom: 24px;
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        width:41%;
+        width: 41%;
     }
 
     main section ul article img {
@@ -517,7 +517,7 @@ main .login {
     }
 
     .fa-truck {
-        top:69%;
+        top: 69%;
     }
 
     .cost {
@@ -692,7 +692,7 @@ main .login {
     }
 
     footer .foo .footer-icon:hover {
-        color:  #39b54a;
+        color: #39b54a;
         cursor: pointer;
     }
 
@@ -712,6 +712,6 @@ main .login {
     }
 
     main form .form-buttons .form-button button:hover {
-        background-color:#0022AA;
+        background-color: #0022AA;
     }
 }
